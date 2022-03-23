@@ -1,0 +1,6 @@
+framework module Pods_CleanSpaceX {
+  umbrella header "Pods-CleanSpaceX-umbrella.h"
+
+  export *
+  module * { export * }
+}

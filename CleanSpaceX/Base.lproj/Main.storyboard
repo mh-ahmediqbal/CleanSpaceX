@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n5i-k7-kjm">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Clean SpaceX-->
+        <scene sceneID="euD-Fe-fra">
+            <objects>
+                <tableViewController restorationIdentifier="RocketsViewController" storyboardIdentifier="RocketsViewController" title="Clean SpaceX" id="18c-QG-fc1" customClass="RocketsViewController" customModule="CleanSpaceX" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OWd-8J-sLn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RocketsCell" id="OHl-LM-VEr" customClass="RocketsCell" customModule="CleanSpaceX" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OHl-LM-VEr" id="PVL-xC-TtC">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="18c-QG-fc1" id="gW3-j4-qZq"/>
+                            <outlet property="delegate" destination="18c-QG-fc1" id="vmQ-dY-YSl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="CleanSpaceX" id="VLq-gf-t09"/>
+                    <connections>
+                        <outlet property="tableView" destination="OWd-8J-sLn" id="feh-Lo-Ckc"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5qZ-FR-luy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1979.7101449275365" y="101.78571428571428"/>
+        </scene>
+        <!--Rocket Detail View Controller-->
+        <scene sceneID="s1m-wC-xI1">
+            <objects>
+                <viewController restorationIdentifier="RocketDetailViewController" storyboardIdentifier="RocketDetailViewController" id="5jr-Qd-HGr" customClass="RocketDetailViewController" customModule="CleanSpaceX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6cf-GH-jvJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEs-3F-Xqw" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="10" y="54" width="394" height="260"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="Ggh-RA-seE"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Flight: 2010-06-04" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yM7-bg-tGC">
+                                <rect key="frame" x="115.5" y="334" width="183.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country: United States" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Teg-D1-0qD">
+                                <rect key="frame" x="120" y="360" width="174" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success Rate: 97%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdQ-6R-eZF">
+                                <rect key="frame" x="133.5" y="386" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rocket Name: Falcon 9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfi-td-zxo">
+                                <rect key="frame" x="119" y="412" width="176" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mass: 1207920 lb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFU-5J-CQT">
+                                <rect key="frame" x="139.5" y="438" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwQ-d4-59I">
+                                <rect key="frame" x="30" y="464" width="354" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="j0p-GK-pbi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqW-OG-6fp">
+                                <rect key="frame" x="349" y="322" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="BX3-A3-8hL"/>
+                                    <constraint firstAttribute="height" constant="45" id="KII-Hi-oUo"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="wiki"/>
+                                <buttonConfiguration key="configuration" style="plain" image="wiki" title=" "/>
+                                <connections>
+                                    <action selector="buttonWikiPressed:" destination="5jr-Qd-HGr" eventType="touchUpInside" id="dRL-KQ-5kv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6pi-Co-JLG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Teg-D1-0qD" firstAttribute="top" secondItem="yM7-bg-tGC" secondAttribute="bottom" constant="5" id="1oH-Sz-H6y"/>
+                            <constraint firstItem="uqW-OG-6fp" firstAttribute="centerY" secondItem="yM7-bg-tGC" secondAttribute="centerY" id="3vC-7x-iMp"/>
+                            <constraint firstItem="pwQ-d4-59I" firstAttribute="centerX" secondItem="6cf-GH-jvJ" secondAttribute="centerX" id="8WI-YM-UQ1"/>
+                            <constraint firstItem="Teg-D1-0qD" firstAttribute="centerX" secondItem="6cf-GH-jvJ" secondAttribute="centerX" id="C5N-7K-LE9"/>
+                            <constraint firstItem="6pi-Co-JLG" firstAttribute="trailing" secondItem="pwQ-d4-59I" secondAttribute="trailing" constant="30" id="CTS-ns-ALz"/>
+                            <constraint firstItem="IdQ-6R-eZF" firstAttribute="centerX" secondItem="6cf-GH-jvJ" secondAttribute="centerX" id="N4K-dF-DMU"/>
+                            <constraint firstItem="IdQ-6R-eZF" firstAttribute="top" secondItem="Teg-D1-0qD" secondAttribute="bottom" constant="5" id="PWL-nH-Zrc"/>
+                            <constraint firstItem="yM7-bg-tGC" firstAttribute="top" secondItem="CEs-3F-Xqw" secondAttribute="bottom" constant="20" id="RGm-X0-jmx"/>
+                            <constraint firstItem="yfi-td-zxo" firstAttribute="centerX" secondItem="6cf-GH-jvJ" secondAttribute="centerX" id="Rho-RM-Svc"/>
+                            <constraint firstItem="fFU-5J-CQT" firstAttribute="top" secondItem="yfi-td-zxo" secondAttribute="bottom" constant="5" id="TsR-st-Cpf"/>
+                            <constraint firstItem="pwQ-d4-59I" firstAttribute="leading" secondItem="6pi-Co-JLG" secondAttribute="leading" constant="30" id="Yfr-vt-n36"/>
+                            <constraint firstItem="6pi-Co-JLG" firstAttribute="trailing" secondItem="uqW-OG-6fp" secondAttribute="trailing" constant="20" id="ZJ4-8O-Bvw"/>
+                            <constraint firstItem="yM7-bg-tGC" firstAttribute="centerX" secondItem="6cf-GH-jvJ" secondAttribute="centerX" id="d8i-Wy-tSR"/>
+                            <constraint firstItem="fFU-5J-CQT" firstAttribute="centerX" secondItem="6cf-GH-jvJ" secondAttribute="centerX" id="eaz-KV-wiv"/>
+                            <constraint firstItem="CEs-3F-Xqw" firstAttribute="top" secondItem="6pi-Co-JLG" secondAttribute="top" constant="10" id="hq1-lG-K1A"/>
+                            <constraint firstItem="6pi-Co-JLG" firstAttribute="trailing" secondItem="CEs-3F-Xqw" secondAttribute="trailing" constant="10" id="im3-uB-aCa"/>
+                            <constraint firstItem="CEs-3F-Xqw" firstAttribute="leading" secondItem="6pi-Co-JLG" secondAttribute="leading" constant="10" id="ivJ-AT-PEy"/>
+                            <constraint firstItem="yfi-td-zxo" firstAttribute="top" secondItem="IdQ-6R-eZF" secondAttribute="bottom" constant="5" id="uNP-Dy-BBy"/>
+                            <constraint firstItem="pwQ-d4-59I" firstAttribute="top" secondItem="fFU-5J-CQT" secondAttribute="bottom" constant="5" id="zkO-sw-DzN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonWiki" destination="uqW-OG-6fp" id="El9-vh-dAC"/>
+                        <outlet property="labelCountry" destination="Teg-D1-0qD" id="7H7-Zt-oqD"/>
+                        <outlet property="labelDescription" destination="pwQ-d4-59I" id="Use-gi-cQ7"/>
+                        <outlet property="labelFirstFlight" destination="yM7-bg-tGC" id="Ezr-Si-e2H"/>
+                        <outlet property="labelMass" destination="fFU-5J-CQT" id="Qxb-4S-FII"/>
+                        <outlet property="labelRocketName" destination="yfi-td-zxo" id="Mtc-en-pb1"/>
+                        <outlet property="labelSuccessRate" destination="IdQ-6R-eZF" id="FMx-iv-Ysz"/>
+                        <outlet property="slideShow" destination="CEs-3F-Xqw" id="HAE-hH-WR9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K6j-3d-Sc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2830" y="102"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gDF-om-v78">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n5i-k7-kjm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8hx-Mz-kOO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="18c-QG-fc1" kind="relationship" relationship="rootViewController" id="A9S-U5-inJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uyl-nw-9MD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.5652173913045" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wiki" width="35" height="35"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
