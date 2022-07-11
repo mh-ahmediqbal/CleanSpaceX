@@ -34,7 +34,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="CleanSpaceX" id="VLq-gf-t09"/>
                     <connections>
-                        <outlet property="tableView" destination="OWd-8J-sLn" id="feh-Lo-Ckc"/>
+                        <outlet property="tableView" destination="OWd-8J-sLn" id="igM-Om-fmW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qZ-FR-luy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

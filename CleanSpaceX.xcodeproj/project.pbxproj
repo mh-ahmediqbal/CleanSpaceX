@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46F58B7A5ED2AA4A13F23644 /* Pods_CleanSpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B0A5F202A7D70F0CF6DD9E /* Pods_CleanSpaceX.framework */; };
+		540E5560287C8B97009C0259 /* rockets.json in Resources */ = {isa = PBXBuildFile; fileRef = 5486056226CD1913003506A5 /* rockets.json */; };
 		5426C46928705DED00CA944E /* RocketsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5426C46528705DED00CA944E /* RocketsViewControllerTests.swift */; };
 		5426C46A28705DED00CA944E /* RocketsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5426C46628705DED00CA944E /* RocketsInteractorTests.swift */; };
 		5426C46B28705DED00CA944E /* RocketsWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5426C46728705DED00CA944E /* RocketsWorkerTests.swift */; };
@@ -18,7 +19,6 @@
 		5486052B26CD0B9A003506A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5486052926CD0B9A003506A5 /* Main.storyboard */; };
 		5486052D26CD0BB8003506A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5486052C26CD0BB8003506A5 /* Assets.xcassets */; };
 		5486053026CD0BB8003506A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5486052E26CD0BB8003506A5 /* LaunchScreen.storyboard */; };
-		5486053B26CD0BB9003506A5 /* RocketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5486053A26CD0BB9003506A5 /* RocketsTests.swift */; };
 		5486054626CD0BB9003506A5 /* CleanSpaceXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5486054526CD0BB9003506A5 /* CleanSpaceXUITests.swift */; };
 		5486055A26CD14C0003506A5 /* RocketsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5486055426CD14C0003506A5 /* RocketsPresenter.swift */; };
 		5486055B26CD14C0003506A5 /* RocketsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5486055526CD14C0003506A5 /* RocketsWorker.swift */; };
@@ -80,7 +80,6 @@
 		5486052F26CD0BB8003506A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5486053126CD0BB8003506A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5486053626CD0BB9003506A5 /* CleanSpaceXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanSpaceXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5486053A26CD0BB9003506A5 /* RocketsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsTests.swift; sourceTree = "<group>"; };
 		5486053C26CD0BB9003506A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5486054126CD0BB9003506A5 /* CleanSpaceXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanSpaceXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5486054526CD0BB9003506A5 /* CleanSpaceXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanSpaceXUITests.swift; sourceTree = "<group>"; };
@@ -299,7 +298,6 @@
 		54F64261287057D10029E05E /* Rockets */ = {
 			isa = PBXGroup;
 			children = (
-				5486053A26CD0BB9003506A5 /* RocketsTests.swift */,
 				5426C46E28705F3200CA944E /* Mock */,
 				5426C46D28705E0400CA944E /* Scene */,
 			);
@@ -476,6 +474,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				540E5560287C8B97009C0259 /* rockets.json in Resources */,
 				5486053026CD0BB8003506A5 /* LaunchScreen.storyboard in Resources */,
 				5486052D26CD0BB8003506A5 /* Assets.xcassets in Resources */,
 				5486052B26CD0B9A003506A5 /* Main.storyboard in Resources */,
@@ -639,7 +638,6 @@
 			files = (
 				5426C46C28705DED00CA944E /* RocketsPresenterTests.swift in Sources */,
 				5426C46928705DED00CA944E /* RocketsViewControllerTests.swift in Sources */,
-				5486053B26CD0BB9003506A5 /* RocketsTests.swift in Sources */,
 				5426C46A28705DED00CA944E /* RocketsInteractorTests.swift in Sources */,
 				5426C47028705F5400CA944E /* RocketsWebServiceMock.swift in Sources */,
 				5426C46B28705DED00CA944E /* RocketsWorkerTests.swift in Sources */,

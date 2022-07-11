@@ -43,4 +43,10 @@ class GeneralUtility: NSObject {
             return formattedStringWithSymbol
         }
     }
+    
+    // MARK: Get Stub Response
+    static func stubbedResponse(_ filename: String) -> Data! {
+        guard let path = Bundle.main.path(forResource: filename, ofType: "json") else { fatalError("path could not be found") }
+        return (try? Data(contentsOf: URL(fileURLWithPath: path)))
+    }
 }

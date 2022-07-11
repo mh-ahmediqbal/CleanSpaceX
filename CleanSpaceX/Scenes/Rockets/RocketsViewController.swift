@@ -24,7 +24,7 @@ class RocketsViewController: UIViewController, RocketsDisplayLogic
     var interactor: RocketsBusinessLogic?
     var router: (NSObjectProtocol & RocketsRoutingLogic & RocketsDataPassing)?
     var dataSourceRockets: [Rocket]?
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     // MARK: Object lifecycle
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)

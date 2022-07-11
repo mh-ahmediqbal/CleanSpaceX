@@ -31,6 +31,7 @@ class RocketsViewControllerTests: XCTestCase
     
     override func tearDown()
     {
+        sut = nil
         window = nil
         super.tearDown()
     }
@@ -42,6 +43,7 @@ class RocketsViewControllerTests: XCTestCase
         let bundle = Bundle.main
         let storyboard = UIStoryboard(name: "Main", bundle: bundle)
         sut = storyboard.instantiateViewController(withIdentifier: "RocketsViewController") as? RocketsViewController
+        sut.loadViewIfNeeded()
     }
     
     func loadView()
@@ -66,12 +68,10 @@ class RocketsViewControllerTests: XCTestCase
         }
     }
     func testRocketsViewController_WhenCreated_HasTableViewProtocolsRegistered() throws {
-        // Arrange
+        // Arrange & Act
         let tableView: UITableView = try XCTUnwrap(sut.tableView, "tableView does not have a referencing outlet")
         let tableViewDelegate = try XCTUnwrap(tableView.delegate, "RocketsViewController's tableView delegate is nil")
         let tableViewDataSource = try XCTUnwrap(tableView.dataSource, "RocketsViewController's tableView datasource is nil")
-        
-        // Act
         
         // Assert
         XCTAssertTrue(tableViewDelegate.isKind(of: RocketsViewController.self), "RocketsViewController is not injected to tableView as delegate")
