@@ -13,7 +13,7 @@ import Moya
 enum APIService {
     
     // MARK: - Fetch Rockets -
-    case fetchRockets(request: Rockets.SpaceX.Request)
+    case fetchRockets
 }
 
 extension APIService : TargetType {
@@ -58,7 +58,7 @@ extension APIService : TargetType {
         
         switch self {
         
-        case .fetchRockets(_):
+        case .fetchRockets:
             // you can modify it based on your use case
             let params: [String: Any] = [:]
             return .requestParameters(parameters: params, encoding: URLEncoding.default)

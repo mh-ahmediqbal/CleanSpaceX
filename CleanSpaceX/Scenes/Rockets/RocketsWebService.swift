@@ -14,7 +14,7 @@ protocol RocketsWebSeriveProtocol {
 
 class RocketsWebService : RocketsWebSeriveProtocol {
     func fetchRockets(request: Rockets.SpaceX.Request) -> Promise<[Rocket]> {
-        let target = APIService.fetchRockets(request: request)
+        let target = APIService.fetchRockets
         let rocketsData = APIManager.callApi(target, dataReturnType: [Rocket].self, test: request.test, sslPinningEnabled: request.sslPinningEnabled, debugMode: APIConfig.debug)
         return rocketsData
     }

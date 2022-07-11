@@ -120,6 +120,7 @@ extension RocketsViewController: UITableViewDataSource {
         if let rocket = dataSourceRockets?[indexPath.row] {
             print(rocket)
             cell.setupCell(rocket: rocket)
+            cell.selectionStyle = .none
         }
         return cell
     }
